@@ -28,9 +28,9 @@ export default function About() {
             <p className="text-gray-600 text-lg leading-relaxed animate-fade-in">
               Welcome to GrillUp, where passion meets flavor! Our burgers are
               crafted with the finest ingredients, grilled to perfection, and
-              served with love. Whether you're craving a classic cheeseburger or
-              something bold and new, we've got you covered. Come join us for a
-              bite you won't forget.
+              served with love. Whether you&apos;re craving a classic cheeseburger or
+              something bold and new, we&apos;ve got you covered. Come join us for a
+              bite you won&apos;t forget.
             </p>
           </div>
         </div>
