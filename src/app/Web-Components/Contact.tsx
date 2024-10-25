@@ -11,19 +11,20 @@ export default function Contact() {
         </h2>
         <div className="container px-5 mx-auto flex sm:flex-nowrap flex-wrap">
           {/* Map Section */}
-          <div className="mt-24 ml-1 lg:w-2/3 md:w-1/2  bg-gray-100 rounded-lg overflow-hidden">
-            <iframe
-              width="100%"
-              height="500"
-              frameBorder={0}
-              marginHeight={0}
-              marginWidth={0}
-              title="map"
-              scrolling="no"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3620.380799686143!2d67.02340577563552!3d24.85084057793563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33e75a28531d1%3A0x412558657f5ff4a8!2sGovernor%20House%20Sindh!5e0!3m2!1sen!2s!4v1729784555606!5m2!1sen!2s"
-              style={{ filter: "contrast(1.2) opacity(0.4)" }}
-            />
-          </div>
+          <div className="mt-20  h-96 lg:mt-32 mx-auto lg:w-2/3 md:w-1/2 bg-gray-100 rounded-lg overflow-hidden flex justify-center">
+  <iframe
+    width="100%"
+    height="500"
+    frameBorder={0}
+    marginHeight={0}
+    marginWidth={0}
+    title="map"
+    scrolling="no"
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3620.380799686143!2d67.02340577563552!3d24.85084057793563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33e75a28531d1%3A0x412558657f5ff4a8!2sGovernor%20House%20Sindh!5e0!3m2!1sen!2s!4v1729784555606!5m2!1sen!2s"
+    style={{ filter: "contrast(1.2) opacity(0.4)", width: '100%', height: '100%' }} // Ensure iframe takes full width and height
+  />
+</div>
+
 
           {/* Contact Form Section */}
           <div className="lg:w-1/3 md:w-1/2 w-full bg-white rounded-lg p-8 flex flex-col md:ml-4 mt-10 md:mt-0 relative shadow-md">
