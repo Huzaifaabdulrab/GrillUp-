@@ -11,7 +11,7 @@ export default function Contact() {
         </h2>
         <div className="container px-5 mx-auto flex sm:flex-nowrap flex-wrap">
           {/* Map Section */}
-          <div className="mt-24 ml-9 lg:w-2/3 md:w-1/2 bg-gray-100 rounded-lg overflow-hidden">
+          <div className="mt-24 ml-1 lg:w-2/3 md:w-1/2  bg-gray-100 rounded-lg overflow-hidden">
             <iframe
               width="100%"
               height="500"
@@ -73,10 +73,12 @@ export default function Contact() {
             </div>
             {/* Button for sending the order */}
             <Link href="order">
-              <button className="ml-[5.8rem] text-white bg-orange-600 border-0 py-2 px-6 focus:outline-none hover:bg-orange-700 rounded text-lg">
-                Send Order
-              </button>
-            </Link>
+            <div className="flex justify-center items-center">
+  <button className="text-white bg-orange-600 border-0 py-2 px-6 focus:outline-none hover:bg-orange-700 rounded text-lg">
+    Send Order
+  </button>
+</div>
+</Link>
             <p className="text-xs text-gray-500 mt-3 text-center">Thank You So Much</p>
           </div>
         </div>

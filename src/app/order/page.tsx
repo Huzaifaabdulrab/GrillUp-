@@ -12,7 +12,7 @@ export default function Order() {
 
   return (
     <>
-      <div className="text-center mt-72 items-center flex flex-col w-auto">
+      <div className="text-center mt-48 items-center flex flex-col w-auto">
         <h1 className="text-orange-500 text-4xl">𝕲𝖗𝖎𝖑𝖑𝖀𝖕!</h1>
         <p className="w-auto p-6 mt-10 text-2xl bg-gray-50">
           This is a demo,🥳 so no actual orders will be processed yet, 🥰 as
