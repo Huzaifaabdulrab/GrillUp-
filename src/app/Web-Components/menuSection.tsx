@@ -1,4 +1,5 @@
 // components/Menu.js
+import Link from "next/link";
 import { FaStar } from "react-icons/fa";
 import React from "react";
 import Image from "next/image";
@@ -84,10 +85,12 @@ export default function Menu() {
                       <p className="text-gray-800 font-bold">
                         Price: {item.price}
                       </p>
-                      <button className="bg-orange-600 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition">
-                        Order Now
-                      </button>
-                    </div>
+                      <Link href="#Contact" >
+  <button className="bg-orange-600 text-white px-4 py-2 rounded-lg hover:bg-orange-500 transition">
+    Order Now
+  </button>
+</Link>
+   </div>
                   </div>
                 </div>
               </div>
