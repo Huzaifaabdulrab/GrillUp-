@@ -46,9 +46,19 @@ export default function Contact() {
                 Number
               </label>
               <input
-                type="text"
+                type="Number"
                 id="Number"
                 name="Number"
+                className="w-full bg-white rounded border border-gray-300 focus:border-orange-600 focus:ring-2 focus:ring-orange-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              />
+
+<label htmlFor="Order Name" className="leading-7 text-sm text-gray-600">
+                Order Name 
+              </label>
+              <input
+                type="text"
+                id="OrderName"
+                name="OrderName"
                 className="w-full bg-white rounded border border-gray-300 focus:border-orange-600 focus:ring-2 focus:ring-orange-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
               />
 
@@ -62,6 +72,7 @@ export default function Contact() {
                 className="w-full bg-white rounded border border-gray-300 focus:border-orange-600 focus:ring-2 focus:ring-orange-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
               />
             </div>
+
             <div className="relative mb-4">
               <label htmlFor="message" className="leading-7 text-sm text-gray-600">
                 Any Requirements for Your Order

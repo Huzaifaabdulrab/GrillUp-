@@ -1,7 +1,6 @@
 'use client'
-import { useState } from "react";
+import Link from "next/link";
 import { FaStar } from "react-icons/fa";
-import Confetti from "react-confetti"; // Import the confetti package
 import M5 from "../images/BurgerImages/M5.jpg";
 import M6 from "../images/BurgerImages/M6.jpg";
 import M7 from "../images/BurgerImages/M7.jpg";
@@ -14,12 +13,6 @@ import { StaticImageData } from "next/image";
 import Image  from "next/image";
 
 export default function SpecialOffer() {
-  const [showConfetti, setShowConfetti] = useState(false);
-
-  const handleConfetti = () => {
-    setShowConfetti(true);
-    setTimeout(() => setShowConfetti(false), 3000); // Hide confetti after 3 seconds
-  };
 
   interface List {
     id: number;
@@ -119,7 +112,6 @@ export default function SpecialOffer() {
           },
   
   ];
-
   return (
     <><h1 id="Offer"
     className="offerheading bg-gray-100 text-4xl text-orange-700 font-bold text-center pb-10"
@@ -127,18 +119,12 @@ export default function SpecialOffer() {
   >
     GrillUp! Offers
   </h1>
+  <Link href={"#Contact"}>
    <div className="bg-gray-100 flex flex-wrap gap-8 p-6 justify-center">
-      {showConfetti && (
-        <Confetti
-          width={window.innerWidth}
-          height={window.innerHeight}
-        />
-      )}
 
       {OfferList.map((items) => (
         <div
           key={items.id}
-          onClick={handleConfetti} // Trigger confetti on click
           className="flex-1 border border-white min-w-[300px] max-w-[32%] bg-white shadow-lg rounded-lg overflow-hidden flex flex-col relative cursor-pointer hover:scale-105 transition-transform"
         >
           {/* Discount Tag */}
@@ -174,6 +160,7 @@ export default function SpecialOffer() {
         </div>
       ))}
     </div>
+    </Link>
 </>
   );
 }
